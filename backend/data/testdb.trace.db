@@ -1,0 +1,48 @@
+2026-02-27 11:41:59.691017+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM BOOKS BOOKS [*]ID ID"; SQL statement:
+SELECT * FROM BOOKS BOOKS ID ID [42000-240]
+2026-02-27 11:50:07.372946+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(500)": "U&'Node.js \\bca0\\c2a4\\d2b8\\c140\\b7ec 1\\c704! \\ac1c\\c815 3\\d310!\\\\n\\d55c \\ad8c\\c7... (608)"; SQL statement:
+UPDATE "PUBLIC"."BOOKS" SET "ID"=? ,"AUTHOR"=? ,"CONTENT"=? ,"COVER_IMAGE_URL"=? ,"CREATED_AT"=? ,"TITLE"=? ,"SUB_TITLE"=?  WHERE "ID"=? [22001-240]
+2026-02-27 11:50:07.380041+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(500)": "U&'Node.js \\bca0\\c2a4\\d2b8\\c140\\b7ec 1\\c704! \\ac1c\\c815 3\\d310!\\\\n\\d55c \\ad8c\\c7... (608)"; SQL statement:
+UPDATE "PUBLIC"."BOOKS" SET "ID"=? ,"AUTHOR"=? ,"CONTENT"=? ,"COVER_IMAGE_URL"=? ,"CREATED_AT"=? ,"TITLE"=? ,"SUB_TITLE"=?  WHERE "ID"=? [22001-240]
+2026-02-27 11:50:52.779470+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(500)": "U&'Node.js \\bca0\\c2a4\\d2b8\\c140\\b7ec 1\\c704! \\ac1c\\c815 3\\d310!\\\\n\\d55c \\ad8c\\c7... (608)"; SQL statement:
+UPDATE "PUBLIC"."BOOKS" SET "ID"=? ,"AUTHOR"=? ,"CONTENT"=? ,"COVER_IMAGE_URL"=? ,"CREATED_AT"=? ,"TITLE"=? ,"SUB_TITLE"=?  WHERE "ID"=? [22001-240]
+2026-02-27 11:50:52.780470+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(500)": "U&'Node.js \\bca0\\c2a4\\d2b8\\c140\\b7ec 1\\c704! \\ac1c\\c815 3\\d310!\\\\n\\d55c \\ad8c\\c7... (608)"; SQL statement:
+UPDATE "PUBLIC"."BOOKS" SET "ID"=? ,"AUTHOR"=? ,"CONTENT"=? ,"COVER_IMAGE_URL"=? ,"CREATED_AT"=? ,"TITLE"=? ,"SUB_TITLE"=?  WHERE "ID"=? [22001-240]
+2026-02-27 11:51:11.957110+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(500)": "U&'Node.js \\bca0\\c2a4\\d2b8\\c140\\b7ec 1\\c704! \\ac1c\\c815 3\\d310!\\\\n\\d55c \\ad8c\\c7... (574)"; SQL statement:
+UPDATE "PUBLIC"."BOOKS" SET "ID"=? ,"AUTHOR"=? ,"CONTENT"=? ,"COVER_IMAGE_URL"=? ,"CREATED_AT"=? ,"TITLE"=? ,"SUB_TITLE"=?  WHERE "ID"=? [22001-240]
+2026-02-27 11:51:11.957110+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(500)": "U&'Node.js \\bca0\\c2a4\\d2b8\\c140\\b7ec 1\\c704! \\ac1c\\c815 3\\d310!\\\\n\\d55c \\ad8c\\c7... (574)"; SQL statement:
+UPDATE "PUBLIC"."BOOKS" SET "ID"=? ,"AUTHOR"=? ,"CONTENT"=? ,"COVER_IMAGE_URL"=? ,"CREATED_AT"=? ,"TITLE"=? ,"SUB_TITLE"=?  WHERE "ID"=? [22001-240]
+2026-02-27 12:08:40.258316+09:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]
+2026-02-27 12:09:59.420090+09:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]
+2026-02-27 12:11:40.797290+09:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]
+2026-02-27 12:11:43.597141+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]
+2026-02-27 12:11:51.731126+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]
+2026-02-27 12:12:01.000933+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]
+2026-02-27 12:12:28.289950+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]
+2026-02-27 12:13:34.527381+09:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]
+2026-02-27 12:13:47.688101+09:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM books ORDER BY RAND() LIMIT [*]: limit"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT * FROM books ORDER BY RAND() LIMIT : limit [42001-240]

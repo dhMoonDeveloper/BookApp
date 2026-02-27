@@ -10,6 +10,10 @@ public record CreateBookRequest (
     @Size(max = 200)
     String title,
 
+    @NotBlank(message = "소제목은 필수입니다.")
+    @Size(max = 300)
+    String subTitle,
+
     @NotBlank(message = "저자는 필수입니다.")
     @Size(max = 100)
     String author,

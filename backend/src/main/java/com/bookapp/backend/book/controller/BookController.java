@@ -24,9 +24,21 @@ public class BookController {
         return bookService.getBooks();
     }
 
+    @GetMapping("/random")
+    public List<BookResponse> getRandomBooks(@RequestParam(defaultValue = "2") int limit) {
+
+        limit = Math.max(1, Math.min(limit, 10));
+        return bookService.getRandomBooks(limit);
+    }
+
     @GetMapping("/{id}")
     public Book getBook(@PathVariable Long id) {
         return bookService.getBook(id);
+    }
+
+    @GetMapping("/search")
+    public List<BookResponse> getSearchBook(@RequestParam(required = false) String q) {
+        return bookService.getSearchBook(q);
     }
 
     @PostMapping

@@ -24,15 +24,25 @@ public class BookService {
         return bookRepository.findAll().stream().map(BookResponse::from).toList();
     }
 
+    public List<BookResponse> getRandomBooks(int limit) {
+        return bookRepository.findRandomBooks(limit).stream().map(BookResponse::from).toList();
+    }
+
     // 책 조회 (단건)
     public Book getBook(Long id) {
         return bookRepository.findById(id).orElseThrow(() -> new BookNotFoundException(id));
+    }
+
+    // 책 검색 (제목 or 저자)
+    public List<BookResponse> getSearchBook(String q) {
+        return bookRepository.searchBook(q).stream().map(BookResponse::from).toList();
     }
 
     // 책 등록
     public Book createBook(CreateBookRequest req) {
         Book book = new Book(
                 req.title(),
+                req.subTitle(),
                 req.author(),
                 req.content(),
                 req.coverImageUrl()
@@ -40,12 +50,14 @@ public class BookService {
         return bookRepository.save(book);
     }
 
+    // 책 수정
     public Book updateBook(Long id, UpdateBookRequest req) {
         Book book = bookRepository.findById(id).orElseThrow(() -> new BookNotFoundException(id));
-        book.update(req.title(), req.content(), req.author(), req.coverImageUrl());
+        book.update(req.title(), req.subTitle(), req.content(), req.author(), req.coverImageUrl());
         return bookRepository.save(book);
     }
 
+    // 책 삭제
     public void deleteBook(Long id) {
         Book book = bookRepository.findById(id).orElseThrow(() -> new BookNotFoundException(id));
 
